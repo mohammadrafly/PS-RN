@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "PS-RN",
-    "slug": "PS-RN",
+    "slug": "ps-rn",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -28,6 +28,13 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "scheme": "com.dev.ps-rn",
+    "extra": {
+      "eas": {
+        "projectId": "c1249271-e10d-4eed-9fe8-0d8eb18cd5a6"
+      }
+    },
+    "owner": "rafly8787"
   }
 }
