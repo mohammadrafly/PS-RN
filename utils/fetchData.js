@@ -59,7 +59,8 @@ const FetchData = () => {
             .catch((error) => {
                 alert(error);
             });
-    }
+    };
+    
     return (
         <View style={styles.containerSwiper}>
             {!tasks && (

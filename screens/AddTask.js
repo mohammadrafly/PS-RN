@@ -73,7 +73,7 @@ const Todo: React.FunctionComponent<CheckboxComponentProps> = ({ navigation }) =
     }
  
     return (
-        <View style={styles.container}> 
+        <ScrollView style={styles.container}> 
             <View style={styles.text_top_container}>
                 <TextInput
                     style={styles.inputStyleTop}
@@ -168,7 +168,7 @@ const Todo: React.FunctionComponent<CheckboxComponentProps> = ({ navigation }) =
                     onPress={addTodo} 
                 />   
             </ScrollView>
-        </View>
+        </ScrollView>
     )
 }
  

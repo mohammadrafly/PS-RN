@@ -10,48 +10,36 @@ import FetchDataComplete from '../utils/fetchDataComplete';
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
 
 function ToDo() {
-    return (
-        <View style={styles.containerCard}>
+    return<View style={styles.containerCard}>
             <FetchData />
         </View>
-    )
 }
 
 function OnProgress() {
-    return (
-        <View style={styles.containerCard}>
+    return <View style={styles.containerCard}>
             <FetchDataOnProgress />
         </View>      
-    );
   }
 
 function Complete() {
-    return (
-        <View style={styles.containerCard}>
+    return <View style={styles.containerCard}>
             <FetchDataComplete />
         </View>  
-    );
 }
 
 const Tab = createMaterialTopTabNavigator();
 
 export default function Task() {
         return (
-        <View style={styles.containerTabs}>  
-            <NavigationContainer
-            independent={true}
-            >
                 <Tab.Navigator
                     screenOptions={{
-                        swipeEnabled: true
+                        swipeEnabled: false
                     }}
                 >
                     <Tab.Screen name="To Do" component={ToDo} />
                     <Tab.Screen name="On Progress" component={OnProgress} />
                     <Tab.Screen name="Complete" component={Complete} />
                 </Tab.Navigator>
-            </NavigationContainer>
-        </View>
         );
 }
 

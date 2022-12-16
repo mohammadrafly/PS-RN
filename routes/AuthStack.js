@@ -54,7 +54,9 @@ function MainStack() {
 }
 export default function App() {
   return (
-    <NavigationContainer>
+    <NavigationContainer
+    independent={true}
+    >
       <MainStack />
     </NavigationContainer>
   );

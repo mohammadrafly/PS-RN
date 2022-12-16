@@ -12,7 +12,9 @@ const Stack = createStackNavigator();
 export default class AppStack extends Component {
   render() {   
     return (
-      <NavigationContainer>
+      <NavigationContainer
+      independent={true}
+      >
         <Stack.Navigator
           initialRouteName="Dashboard"
           screenOptions={{
